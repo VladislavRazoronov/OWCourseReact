@@ -1,0 +1,8 @@
+.RnMCharacter{
+    display: flex;
+    background-color: lightyellow;
+    flex-wrap: wrap;
+}
+.info{
+    display: flex;
+}
