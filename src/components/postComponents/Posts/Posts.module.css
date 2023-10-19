@@ -1,0 +1,14 @@
+.PostList{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width:60vw;
+}
+.Posts{
+    display: flex;
+}
+.PostDetails{
+    width:40vw;
+    margin-left:60vw;
+    position:fixed;
+}
