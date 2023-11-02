@@ -1,0 +1,10 @@
+.episode{
+    width:18vw;
+    height:15vh;
+    padding:5px;
+    border:solid black 2px;
+    text-align: center;
+}
+.episode p{
+    margin:0;
+}
