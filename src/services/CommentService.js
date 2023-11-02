@@ -1,8 +1,8 @@
 import {axiosService} from "./AxiosService";
 import {urls} from "../constants/urls";
 
-let CommentService = ()=>{
-    return axiosService.get(urls.comments)
+let commentService = {
+    byPostId:(postId)=>axiosService.get(urls.comments.byPostId(postId))
 }
 
-export {CommentService}
+export {commentService}

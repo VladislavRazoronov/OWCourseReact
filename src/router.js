@@ -1,25 +1,21 @@
 import {createBrowserRouter, Navigate} from "react-router-dom";
 import {MainLayout} from "./layouts/MainLayout";
-import {TodoPage} from "./pages/TodoPage/TodoPage";
-import {AlbumPage} from "./pages/AlbumPage/AlbumPage";
-import {CommentPage} from "./pages/CommentPage/CommentPage";
+import {UsersPage} from "./pages/UsersPage/UsersPage";
+import {UserDetails} from "./pages/UserDetails/UserDetails";
 
 const router = createBrowserRouter([
     {
         path:"",element:<MainLayout/>,children:[
             {
-              index:true,element:<Navigate to={"todo"}/>
+              index:true,element:<Navigate to={"users"}/>
             },
             {
-                path:"todo",element:<TodoPage/>
+                path:"users",element:<UsersPage/>
             },
             {
-                path:"albums",element:<AlbumPage/>
-            },
-            {
-                path:"comments",element:<CommentPage/>
+                path:"userDetails/:userId",element:<UserDetails/>
             }
-        ]
+            ]
     }
 
 ]);
