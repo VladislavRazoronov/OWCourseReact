@@ -3,9 +3,10 @@ import {useNavigate} from "react-router-dom";
 import {useAppContext} from "../../../hooks/useAppContext";
 const Episode = ({props}) => {
     let navigate= useNavigate()
-    const ep = useAppContext()
+    const context = useAppContext()
     let Click=()=>{
-        ep[1](props)
+        context.characters[1](props.characters)
+        context.title[1](props.name)
         navigate("../characters")
     }
 

@@ -3,9 +3,10 @@ import {createContext, useState} from "react";
 const Context = createContext(null);
 
 const ContextProvider = ({children}) => {
-    let episode = useState(null)
+    let characters = useState(null)
+    let title = useState(null)
     return (
-        <Context.Provider value = {episode}>
+        <Context.Provider value = {{characters:characters,title:title}}>
             {children}
         </Context.Provider>
     )
