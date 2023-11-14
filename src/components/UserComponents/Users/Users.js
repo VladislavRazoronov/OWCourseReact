@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
-import {userService} from "../../../services/userService";
+
+
+import {userService} from "../../../services";
 import {User} from "../User/User";
 import style from "./Users.module.css"
 

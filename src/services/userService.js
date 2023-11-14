@@ -1,13 +1,9 @@
 import {axiosService} from "./axiosService";
-import {user} from "../constants/urls";
+import {urls} from "../constants/urls";
 
 const userService={
-    getAll:()=>{
-        return axiosService.get(user.all)
-    },
-    byId:(id)=>{
-        return axiosService.get(user.byId(id))
-    }
+    getAll:()=> axiosService.get(urls.users),
+    create:(data)=> axiosService.post(urls.users,data)
 }
 
 export {userService}
